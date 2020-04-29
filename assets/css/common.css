@@ -1,0 +1,183 @@
+/*Common*/
+.cursor-point {
+    cursor: pointer;
+}
+
+#right-menu-extend .text-overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+#right-menu-extend .h-100 {
+    height: 100%;
+}
+
+#right-menu-extend {
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 999;
+    width: 350px;
+    top: 42px;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(10, 9, 9, 0.84);
+    transition: right ease-out 0.27s;
+    padding: 20px 15px;
+}
+
+#right-menu-extend * {
+    box-sizing: border-box;
+}
+
+#right-menu-extend.v-show {
+    right: 0; !important;
+}
+
+#right-menu-extend.v-hide {
+    right: -350px; !important;
+}
+
+#right-menu-extend .v-header {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 15px;
+    color: #f6931b;
+    font-weight: 900;
+}
+
+/* CSS form add new */
+#right-menu-extend #form-add {
+    display: flex;
+    padding-right: 6px;
+    margin: 6px 0;
+}
+
+#right-menu-extend #form-add > *:not(:last-child) {
+    margin-right: 9px;
+}
+
+#right-menu-extend #form-add input {
+    width: 100%;
+    height: 27px;
+    background-color: rgba(255, 252, 252, 0.73);
+    border: none;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+#right-menu-extend #form-add input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 12px;
+}
+
+#right-menu-extend .code {
+    flex: 0 1 15%;
+}
+
+#right-menu-extend .price {
+    flex: 0 1 20%;
+}
+
+#right-menu-extend .quantity {
+    flex: 0 1 25%;
+}
+
+#right-menu-extend .actions {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* end */
+
+
+/* CSS list price */
+.v-body #expect-price-list {
+    height: 70vh;
+    overflow: scroll;
+    margin-right: -11px;
+}
+
+.v-body .wrap-stock-record {
+    padding: 6px;
+}
+
+.v-body .wrap-stock-record:not(:last-child) {
+    border-bottom: 1px solid rgb(56, 47, 47);
+}
+
+.v-body .wrap-stock-record:nth-child(odd)
+{
+    background-color: rgba(72, 72, 72, 0.5);
+}
+
+.v-body .wrap-stock-record:nth-child(even)
+{
+    background-color:  rgba(0, 0, 0, 0.22);
+}
+
+.v-body .stock-record {
+    display: flex;
+}
+
+.v-body .stock-code {
+    flex: 0 1 15%;
+    display: flex;
+    align-items: center;
+}
+
+.v-body .stock-code > a {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 12.5px;
+    font-weight: 700;
+    color: #0f0 !important;
+    display: block;
+}
+
+.v-body .stock-expect-price {
+    flex: 0 1 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    color: #0f0;
+    margin: 0 9px;
+}
+
+.v-body .stock-quantity {
+    flex: 0 1 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    text-align: right;
+}
+
+.v-body .stock-row-option {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.v-body .stock-row-option > * {
+    margin-left: 3px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.v-body .stock-row-option .link-to-page > a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.v-body .stock-row-option .link-to-page > a > img {
+    width: 65px;
+    object-fit: cover;
+}
+/*end*/
